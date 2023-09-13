@@ -1,0 +1,15 @@
+start: |-
+  Hello! I'm a bot.
+
+id: |-
+  Your ID: `{{.ID}}`
+  Chat ID: `{{.ChatID}}`
+
+utils: |-
+  Some utils for me.
+
+menu: |-
+  Main menu.
+
+link: |-
+  Link: `{{.Link}}`

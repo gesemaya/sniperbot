@@ -1,0 +1,47 @@
+settings:
+  token: '1271267217:HaDWjzjJQMtZGhPubwMBV7nhtcU7gmyjzlz'
+  url: "https://api.teamgram.net"
+  parse_mode: markdown
+  long_poller: {}
+
+commands:
+  /short: s <url>
+
+buttons:
+  id:
+    unique: 'id'
+    text: 'Get ID'
+  
+  utils:
+    unique: 'utils'
+    text: 'Utils'
+  
+  menu:
+    unique: 'menu'
+    text: 'Menu'
+  
+  wait:
+    unique: 'wait'
+    text: 'Wait'
+  
+  link:
+    unique: 'link'
+    text: 'Go'
+    url: '{{.}}'
+
+
+markups:
+  start:
+    - [utils]
+  
+  utils:
+    - [id, menu]
+  
+  menu:
+    - [menu]
+  
+  wait:
+    - [wait]
+  
+  link:
+    - [link]

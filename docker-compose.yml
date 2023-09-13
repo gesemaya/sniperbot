@@ -1,0 +1,5 @@
+services:
+  server:
+    image: "ghcr.io/gesemaya/sniperbot:latest"
+    env_file:
+      - .env
